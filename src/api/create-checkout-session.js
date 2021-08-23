@@ -1,0 +1,1 @@
+const  stripe =require('stripe')('sk_test_51JNMarSHVIow4tQz2EmcFf3TyV59od91kRxClpJAOazXc5j2q16pQvzGeZFUM5oNNC1jXVo3YiqbjXQdwUMJrkxJ00ImsDqIxw')

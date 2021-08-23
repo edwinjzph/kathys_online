@@ -1,0 +1,74 @@
+.checkout {
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+}
+
+.checkout .paper {
+  max-width: 700px;
+  padding: 20px 15px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: #ebb608 !important;
+}
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: #ebb608 !important;
+}
+.MuiButton-containedPrimary {
+  background-color: #ebb608 !important;
+}
+.MuiCircularProgress-svg {
+  color: #ebb608 !important;
+}
+
+.MuiButton-containedSecondary {
+  background-color: #ebb608 !important;
+}
+.checkout .paper h6 {
+  margin: 20px 0;
+}
+
+.checkout .paper .actions.payment-actions {
+  margin-top: 25px;
+}
+.checkout .paper .actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout .paper .actions a {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.checkout .paper .stepper {
+  background-color: #fff;
+}
+
+.products-spinner {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.confirmation h5 {
+  margin: 20px 0;
+}
+
+.confirmation a {
+  color: #000000;
+  background-color: #ebb608;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #ebb608 !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #000 !important;
+}

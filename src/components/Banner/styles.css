@@ -1,0 +1,9 @@
+.three {
+  display: flex;
+
+  flex-direction: column;
+}
+.three h3 {
+  font-size: larger;
+  margin: 10px;
+}

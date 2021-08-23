@@ -1,0 +1,74 @@
+.MuiAppBar-colorPrimary.custom-navbar {
+  align-content: center;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+  background-color: #ffffff;
+}
+.row5 {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.menu svg {
+  height: 30px !important;
+  width: fit-content;
+  padding-right: 70px;
+}
+
+.custom-navbar .custom-title {
+  display: flex;
+}
+
+.custom-navbar .custom-title .logo {
+  width: auto;
+  height: 50px;
+}
+
+.basket-wrapper .custom-basket {
+  font-size: 30px;
+  color: #ebb608;
+}
+
+.basket-wrapper strong {
+  font-weight: 500;
+  color: #000000;
+}
+
+.basket-wrapper h2 {
+  color: #ebb608;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (max-width: 750px) {
+  .basket-wrapper h2 {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .custom-navbar .custom-title .logo {
+    height: 40px;
+  }
+  .MuiToolbar-regular {
+    margin-left: 0;
+  }
+}
+a {
+  color: #000 !important;
+}
+
+@media (max-width: 375px) {
+  .menu svg {
+    height: 30px !important;
+    width: fit-content;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .menu svg {
+    height: 30px !important;
+    width: fit-content;
+    padding-right: 0px;
+  }
+}
