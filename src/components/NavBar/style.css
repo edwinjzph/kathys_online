@@ -1,7 +1,7 @@
 .MuiAppBar-colorPrimary.custom-navbar {
   align-content: center;
   justify-content: center;
-  height: 60px;
+  height: 80px;
   align-items: center;
   background-color: #ffffff;
 }
@@ -13,7 +13,6 @@
 .menu svg {
   height: 30px !important;
   width: fit-content;
-  padding-right: 70px;
 }
 
 .custom-navbar .custom-title {

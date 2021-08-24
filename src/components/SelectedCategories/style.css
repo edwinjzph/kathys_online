@@ -3,7 +3,24 @@
   padding-bottom: 50px;
 }
 .backsvg {
-  margin-left: 35px;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
+}
+.row9 {
+  margin-top: 100px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row9 .title {
+  margin-left: 0px;
+  margin-top: 0 !important;
+}
+
+.MuiButton-text {
+  padding: 0 !important;
 }

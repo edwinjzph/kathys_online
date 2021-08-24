@@ -15,18 +15,37 @@
 }
 .imagescat {
   position: relative;
-  min-height: 130px;
   align-items: center;
-
   align-content: center;
   cursor: pointer;
   text-align: center;
   color: white;
 }
+.imagescat h2 {
+  font-size: 30px;
+  font-weight: 550;
+}
+
+.MuiContainer-maxWidthLg {
+  max-width: 1200px !important;
+}
 @media (max-width: 750px) {
   .imagescat img {
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .imagescat h2 {
+    font-size: large;
+    font-weight: 550;
+  }
+}
+
+@media (max-width: 350px) {
+  .imagescat img {
+    height: 110px;
+    width: 110px;
     object-fit: cover;
     object-position: top;
   }

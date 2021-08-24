@@ -19,7 +19,7 @@
   }
   .cate .MuiGrid-root {
     margin-top: 10px !important;
-    padding: 10px;
+    padding: 0px;
     margin-bottom: 10px !important;
   }
   .cate .title {
@@ -31,7 +31,7 @@
   }
 }
 .cate .title {
-  margin-top: 70px !important;
+  margin-top: 100px !important;
 }
 
 .two .title {
@@ -40,11 +40,15 @@
 
 .title {
   text-align: center;
-
   margin: 0px auto 10px;
   position: relative;
-  line-height: 60px;
-  color: #555;
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 0px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #000;
+  margin-bottom: 0;
+  font-weight: 400;
 }
 p {
   margin-top: 0;
@@ -58,14 +62,8 @@ h4 {
   margin-bottom: 0;
   margin-top: 0;
 }
-.title::after {
-  content: "";
-  width: 80px;
-  height: 5px;
-  border-radius: 5px;
-  position: absolute;
-  background-color: #ebb608;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+@media (max-width: 750px) {
+  .title {
+    font-size: 25px;
+  }
 }

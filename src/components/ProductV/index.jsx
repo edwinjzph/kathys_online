@@ -10,6 +10,7 @@ import { Grid, Container } from "@material-ui/core";
 import Drops from "../Drops";
 import Relatedproducts from "../Relatedproducts";
 import { Link } from "react-router-dom";
+import isEqual from 'lodash/isEqual';
 import { BsArrowLeft } from 'react-icons/bs';
 import { useHistory } from "react-router-dom";
 
@@ -67,6 +68,7 @@ const ProductView = ({  addProduct, updateProduct, RemoveItemFromBasket }) => {
   const [selectoptions, setSelectoptions] = useState([]);
   const [selectcolour, setSelectcolour] = useState([]);
   const [varent, setVarient] = useState([]);
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
   const [selecturl, setSelecturl] = useState([]);
   const [selectvariant, setSelectvariant] = useState([]);
   const [selectvariant2, setSelectvariant2] = useState([]);
@@ -96,8 +98,21 @@ const _ = require('lodash');
       price
     });
   };
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
 
-  
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
@@ -144,11 +159,16 @@ if (loading) {
 }
   return (
       <div className="small-container single-product"  >
- 
+        <Button> <BsArrowLeft onClick={() => history.goBack()} className="backsvg8"/></Button>
           <div className="row" >
-     
+        
               <div className="col-2 images" key={product.id}>  
-              <BsArrowLeft onClick={() => history.goBack()} className="backsvg2"/>
+       
+             {windowDimensions.width<1200?<img
+             src=  { stateImage ? selecturl : product.src }
+             alt={product.name}
+             />
+             :
             <CursorZoom
             key={product.id}
                  onLoad={() => {
@@ -166,7 +186,7 @@ if (loading) {
                     height: 400
                 }}
                 cursorOffset={{ x: 80, y: -80 }}
-            />
+            />}
           <div className="small-img-row">
     
            {product.assets.map((product) => 

@@ -8,8 +8,8 @@ import {
   } from "@material-ui/core";
   import { ShoppingCart } from "@material-ui/icons";
   import { Link, useLocation } from "react-router-dom";
-  import {  BsFilterLeft } from 'react-icons/bs';
-  import { useState } from 'react';
+  import { BsFillBackspaceFill, BsFilterLeft } from 'react-icons/bs';
+  import { useState,useEffect } from 'react';
 import Box from '@material-ui/core/Box';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import List from '@material-ui/core/List';
@@ -22,11 +22,13 @@ import Collapse from '@material-ui/core/Collapse';
 import { makeStyles } from '@material-ui/core/styles';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-
+import { commerce } from "../../lib/commerce";
+import InboxIcon from '@material-ui/icons/MoveToInbox';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
 
 
   import "./style.css";
-
+import Spinner from "../Spinner";
   
 const useStyles = makeStyles((theme) => ({
   list: {
@@ -43,13 +45,16 @@ const useStyles = makeStyles((theme) => ({
     const classes = useStyles();
     const [open, setOpen] = useState(false);
     const [opens, setOpens] = useState(false);
-
+    const [openss, setOpenss] = useState(false);
 
 
     const handleClick = () => {
       setOpens(!opens);
     };
- 
+    const handleClickk = () => {
+      setOpenss(!openss);
+    };
+
     
     return (
       <>
@@ -91,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
       </ListItem>
       <Collapse in={opens} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          {categories.map(groups => <ListItem  onClick={() => window.location.href=`/categories/${groups.id}`}  component={Link} to={`/categories/${groups.id}`}  button className={classes.nested} key={groups.id} >
+          {categories.map(groups => <ListItem onClick={() => {setOpen(false)}} onClick={() => window.location.href=`/categories/${groups.id}`}  component={Link} to={`/categories/${groups.id}`}  button className={classes.nested} key={groups.id} >
         <ListItemText key={groups.id} primary={groups.name}/>
       </ListItem>)}
         </List>

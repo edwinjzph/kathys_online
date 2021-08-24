@@ -48,7 +48,7 @@ const Basket = ({
   return (
 
         <div className="small-container2 cart-page">
-            
+          <h2>Your Cart</h2> 
            <table>
            <thead>
                 <tr>

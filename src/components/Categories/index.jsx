@@ -80,10 +80,12 @@ const Categories = ({categories }) => {
         
         <div className="pto">
             <div >
-            <Container id="products">
+            <Container id="productss">
+            <h2>{categoriess.name}</h2>
             <div className="row3">
+                <Button>
         <BsArrowLeft onClick={() => history.goBack()} className="backsvg2"/>
-                <h2>{categoriess.name}</h2>
+        </Button>
                 <p>{categoriess.products} Products</p>
             </div>
           

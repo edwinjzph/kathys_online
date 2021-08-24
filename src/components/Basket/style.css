@@ -64,16 +64,32 @@ th:last-child {
   color: rgb(255, 0, 0);
   background: #ff0000;
 }
+.cart-page h2 {
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 20px;
+  font-weight: 550;
+  font-size: 35px;
+  border-bottom: 1px solid #000;
+}
+.cart-page {
+  align-items: center;
+  padding: 95px 10px;
+  justify-content: center;
+}
 
 @media (max-width: 750px) {
   .cart-page {
-    padding: 150px 10px;
     align-items: center;
+    padding: 100px 10px;
     justify-content: center;
   }
-  .cart-page {
-    align-items: center;
-    padding: 80px 10px;
-    justify-content: center;
+  .cart-page h2 {
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 20px;
+    font-weight: 550;
+    font-size: 27px;
+    border-bottom: 1px solid #000;
   }
 }
