@@ -1,14 +1,13 @@
 .MuiAppBar-colorPrimary.custom-navbar {
   align-content: center;
   justify-content: center;
-  height: 80px;
+  height: 70px;
   align-items: center;
   background-color: #ffffff;
 }
 .row5 {
   display: flex;
   justify-content: space-around;
-  flex-grow: 1;
 }
 .menu svg {
   height: 30px !important;
