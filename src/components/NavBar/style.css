@@ -5,6 +5,9 @@
   align-items: center;
   background-color: #ffffff;
 }
+.MuiAppBar-colorPrimary.custom-navbar > div > div {
+  padding: 0;
+}
 .row5 {
   display: flex;
   justify-content: space-between;
