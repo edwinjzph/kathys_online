@@ -11,7 +11,7 @@ import Categories from "./components/Categories";
 import Spinner from "./components/Spinner";
 import SelectedCategories from "./components/SelectedCategories";
 import Search from "./components/Search";
-import MetaTags from 'react-meta-tags';
+
 
 
 
@@ -103,9 +103,7 @@ const [orderError, setOrderError] = useState("");
   return (
 
   <Router>
-        <MetaTags>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    </MetaTags>
+   
     <div className="back">
   <NavBar  categories={categories}  basketItems={basketData.total_items}    totalCost={
             (basketData.subtotal &&
